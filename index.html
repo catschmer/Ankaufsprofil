@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Ankaufsprofil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .top-info,
+    .bottom-info {
+      text-align: center;
+      color: #888; /* Helleres Grau */
+      font-size: 16px;
+    }
+
+    .top-info {
+      margin-bottom: 30px;
+    }
+
+    .bottom-info {
+      margin-top: 30px;
+    }
+
+    .header {
+      background-color: #2298c0; /* Neue Farbe */
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 24px;
+      letter-spacing: 5px;
+      border-radius: 4px;
+    }
+
+    .section {
+      border: 1px solid black;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 4px; /* Abgerundete Ecken */
+      overflow: hidden; /* Für runde Ecken bei innerem Inhalt */
+    }
+
+    .row {
+      display: flex;
+      border-top: 1px solid black;
+    }
+
+    .row:first-child {
+      border-top: none;
+    }
+
+    .label {
+      width: 150px;
+      font-weight: bold;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-right: 1px solid black;
+      box-sizing: border-box;
+    }
+
+    .content {
+      flex: 1;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .editable {
+      min-height: 20px;
+      padding: 5px;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      line-height: 1.6;
+    }
+
+    .editable:focus {
+      background-color: #ffffcc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="top-info">Sarah Catrein &amp; Peter Kretschmer | Wörrstadt</div>
+
+    <div class="header">Ankaufsprofil</div>
+
+    <div class="section">
+      <div class="row">
+        <div class="label">Wo</div>
+        <div class="content">
+          <div class="editable" contenteditable="true">Wörrstadt +30 km<br>Richtung: Alzey, Worms, Mainz, Bingen, Bad-Kreuznach und Region</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="row">
+        <div class="label">Lage</div>
+        <div class="content">
+          <div class="editable" contenteditable="true">zentral</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="row">
+        <div class="label">Wohnungen</div>
+        <div class="content">
+          <div class="editable" contenteditable="true">
+            In MFHs von 4–30 Einheiten<br>
+            Unvermietet<br>
+            Zimmer 2–4<br>
+            Mit Balkon<br>
+            Optional: mit Stellplatz<br>
+            Keller/Dachboden
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="row">
+        <div class="label">Zustand</div>
+        <div class="content">
+          <div class="editable" contenteditable="true">
+            Renovierungsbedürftig<br>
+            Mit Sanierungsstau & Altbau<br>
+            Abgelebt – nach Langzeitvermietung<br>
+            Messi- oder Problemimmobilien<br>
+            Keine Teilungserklärung vorhanden
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="row">
+        <div class="label">Preis</div>
+        <div class="content">
+          <div class="editable" contenteditable="true">
+            Einkauf: Bis 3000€/qm<br>
+            Ca: 1500–2000€/qm unter Marktwert (Ausgehend von sehr gehobenen Verkaufspreisen / Premium Immobilien)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="row">
+        <div class="label">Provision</div>
+        <div class="content">
+          <div class="editable" contenteditable="true">
+            Maklerprovisionen werden immer auf den vollen Angebotspreis (Exposé) bezahlt, unabhängig des evtl. verhandelten Kaufpreises
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-info">Stand: August 2025</div>
+  </div>
+
+</body>
+</html>
